@@ -1,28 +1,39 @@
 ---
 import LandingHeader from "../components/LandingHeader.astro";
 import HeroSection from "../components/HeroSection.astro";
-import ChargeSection from "../components/ChargeSection.astro";
 import Layout from "../layouts/Layout.astro";
+import ModelY from "../components/ModelY.astro";
+import Model3 from "../components/Model3.astro";
+import ModelX from "../components/ModelX.astro";
+import ModelS from "../components/ModelS.astro";
+import PowerwallSection from "../components/PowerwallSection.astro";
+import ItemsSection from "../components/ItemsSection.astro";
 ---
 
-<Layout title="Tesla Landing">
+<Layout title="Tesla_Acxyz0-Version">
   <LandingHeader />
 
   <main class="snap-y snap-mandatory relative h-screen overflow-auto">
     <div class="snap-center">
-      <ChargeSection />
+      <ModelY />
+    </div>
+    <div class="snap-center">
+      <Model3 />
+    </div>
+    <div class="snap-center">
+      <ModelX />
+    </div>
+    <div class="snap-center">
+      <ModelS />
     </div>
     <div class="snap-center">
       <HeroSection />
     </div>
     <div class="snap-center">
-      <HeroSection />
+      <PowerwallSection />
     </div>
     <div class="snap-center">
-      <HeroSection />
-    </div>
-    <div class="snap-center">
-      <HeroSection />
+      <ItemsSection />
     </div>
   </main>
 </Layout>
